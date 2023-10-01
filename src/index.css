@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header-a {
+    @apply flex items-center px-3;
+  }
+  .header-img {
+    @apply w-5;
+  }
+  .header-span {
+    @apply text-xs hover:underline p-2;
+  }
+}
