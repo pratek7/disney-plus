@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className="h-[70px] bg-[#090b13] flex items-center px-9  justify-between">
       <img src="/images/logo.svg" alt="" className="w-20 " />
-      <nav className="text-white flex">
+      <nav className="text-white flex overflow-x-hidden">
         <a href="#Home" className="header-a">
           <img src="/images/home-icon.svg" alt="" className="header-img" />
           <span className="header-span ">HOME</span>

@@ -12,4 +12,30 @@
   .header-span {
     @apply text-xs hover:underline p-2;
   }
+  .sliderImg {
+    @apply w-full h-full rounded  border-[4px] border-transparent hover:border-[4px] hover:border-[rgba(249,249,249,0.8)] cursor-pointer duration-300;
+  }
+}
+body {
+  background-color: #040714;
+  color: white;
+}
+.slick-list {
+  overflow: visible;
+}
+.slick-dots > li button {
+  &::before {
+    font-size: 10px;
+    color: rgb(150, 158, 171);
+  }
+}
+.slick-dots > li.slick-active button:before {
+  color: white;
+}
+.slick-arrow {
+  z-index: 1;
+}
+.sliderImg {
+  box-shadow: rgb(0 0 0 / 69%) 0 26px 30px -10px,
+    rgb(0 0 0 / 73%) 0 16px 10px -10px;
 }
