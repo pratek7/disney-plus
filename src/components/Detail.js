@@ -12,7 +12,7 @@ const Detail = () => {
       </div>
       <div className=" min-h-[170px] h-[30vh] min-w-[200px] w-[35vw]">
         <img
-          className="w-full h-full object-contain"
+          className="w-full h-full object-contain mt-[60px]"
           src="https://www.pxpng.com/public/uploads/preview/-11621687998ytrgnduxoh.png"
           alt=""
         />
@@ -34,7 +34,7 @@ const Detail = () => {
       <div className="bg-[rbg(249,249,249)] text-base min-h-[24px] mt-7">
         2018 - 7m - Family, Fantasy, Kids, Animation
       </div>
-      <div className="text-2xl mt-7 bg-[rbg(249,249,249)]">
+      <div className="text-2xl mt-7 bg-[rbg(249,249,249)] max-w-[760px]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
         tempore magnam omnis voluptas labore obcaecati quidem animi mollitia
         quas, repudiandae eum possimus aut, dolores porro?
