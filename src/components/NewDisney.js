@@ -1,19 +1,18 @@
 import React from "react";
-import { selectMovie } from "../features/movies/movieSlice";
+import { selectNewDisney } from "../features/movies/movieSlice";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-
-const Movies = () => {
-  const movies = useSelector(selectMovie);
-
+const NewDisney = () => {
+  const movies = useSelector(selectNewDisney);
+  // console.log("newDisney movies", movies);
   return (
     <div>
-      <h4>Recommended For You!</h4>
+      <h4 className="moviesType"> New Disney</h4>
       <div className="moviesContainer grid grid-cols-4 gap-[25px]">
         {movies &&
-          movies.map((movie) => {
+          movies.map((movie, key) => {
             return (
-              <div key={movie.id}>
+              <div key={key}>
                 <Link to={`/detail/${movie.id}`}>
                   <img src={movie.cardImg} alt="" />
                 </Link>
@@ -25,4 +24,4 @@ const Movies = () => {
   );
 };
 
-export default Movies;
+export default NewDisney;
